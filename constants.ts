@@ -10,7 +10,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Adana Kebap",
     description: "Zırh ile çekilmiş kuzu eti, közlenmiş domates ve biber eşliğinde.",
     price: 320,
-    imageUrl: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=60",
     category: Category.KEBABS
   },
   {
@@ -18,7 +18,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "İskender",
     description: "Özel soslu döner, tereyağı ve yoğurt ile servis edilir.",
     price: 380,
-    imageUrl: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1633336928646-64157cb64140?auto=format&fit=crop&w=500&q=60",
     category: Category.KEBABS
   },
   {
@@ -26,7 +26,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Lahmacun",
     description: "Taş fırında pişmiş, ince hamurlu ve bol malzemeli.",
     price: 90,
-    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=500&q=60",
     category: Category.PIDE_LAHMACUN
   },
   {
@@ -34,7 +34,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Kaşarlı Pide",
     description: "Odun ateşinde, bol kaşar peynirli.",
     price: 180,
-    imageUrl: "https://images.unsplash.com/photo-1573821663912-569905455b1c?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?auto=format&fit=crop&w=500&q=60",
     category: Category.PIDE_LAHMACUN
   },
   {
@@ -58,7 +58,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Fıstıklı Baklava",
     description: "Gaziantep fıstığı ile günlük hazırlanan çıtır baklava (3 dilim).",
     price: 150,
-    imageUrl: "https://images.unsplash.com/photo-1599599810769-bcde5a439ddb?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1617806501441-2a4a45c5316c?auto=format&fit=crop&w=500&q=60",
     category: Category.DESSERTS
   },
   {
@@ -66,7 +66,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Künefe",
     description: "Hatay usulü, sıcak şerbetli ve peynirli.",
     price: 160,
-    imageUrl: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1587334206596-f5c22530d977?auto=format&fit=crop&w=500&q=60",
     category: Category.DESSERTS
   },
   {
@@ -82,7 +82,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Çay",
     description: "Taze demlenmiş Rize çayı.",
     price: 15,
-    imageUrl: "https://images.unsplash.com/photo-1596710629170-7547b2c01579?auto=format&fit=crop&w=500&q=60",
+    imageUrl: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=500&q=60",
     category: Category.DRINKS
   },
   {

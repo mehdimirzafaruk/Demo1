@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { MENU_ITEMS } from '../constants';
 import { Category } from '../types';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ImageOff } from 'lucide-react';
 
 interface MenuPageProps {
   onBack: () => void;
@@ -26,6 +26,13 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onBack }) => {
     }
     return MENU_ITEMS.filter(item => item.category === selectedCategory);
   }, [selectedCategory]);
+
+  // Handle image error by setting a fallback
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    e.currentTarget.onerror = null; // Prevent infinite loop
+    // Use a placeholder service or a local asset if available. Using a reliable placeholder here.
+    e.currentTarget.src = "https://placehold.co/300x300/e2e8f0/64748b?text=Lezzet";
+  };
 
   return (
     <div className="w-full max-w-4xl mx-auto p-4 animate-fadeIn">
@@ -63,12 +70,16 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onBack }) => {
             key={item.id} 
             className="bg-white rounded-[10px] p-4 shadow-sm hover:shadow-md transition-shadow flex gap-4 items-start"
           >
-            <img 
-              src={item.imageUrl} 
-              alt={item.name} 
-              className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] object-cover rounded-lg flex-shrink-0 bg-gray-100"
-              loading="lazy"
-            />
+            <div className="relative w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] flex-shrink-0">
+               <img 
+                src={item.imageUrl} 
+                alt={item.name} 
+                className="w-full h-full object-cover rounded-lg bg-gray-100"
+                loading="lazy"
+                onError={handleImageError}
+              />
+            </div>
+            
             <div className="flex flex-col justify-between h-full w-full py-1">
               <div>
                 <div className="flex justify-between items-start">
